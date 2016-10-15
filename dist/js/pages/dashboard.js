@@ -119,7 +119,12 @@ $(function () {
 
   //SLIMSCROLL FOR CHAT WIDGET
   $('#chat-box, #pod-casts').slimScroll({
-      height: '150px',
+      height: '80px',
+      alwaysVisible: true,
+      railVisible: true
+  });
+  $('.content .menu').slimScroll({
+      height: '200px',
       alwaysVisible: true,
       railVisible: true
   });
@@ -130,9 +135,9 @@ $(function () {
   });
 
   $('.direct-chat-messages').slimScroll({
-      height: '600px',
+      height: '500px',
       alwaysVisible: true,
-      railVisible: true
+      railVisible: false
   });
 
   /* Morris.js Charts */
@@ -448,7 +453,7 @@ $(function () {
       {latLng: [15.3, -61.38], name: 'Dominica'},
       {latLng: [-20.2, 57.5], name: 'Mauritius'},
       {latLng: [26.02, 50.55], name: 'Bahrain'},
-      {latLng: [0.33, 6.73], name: 'São Tomé and Príncipe'}
+      {latLng: [0.33, 6.73], name: 'SÃ£o TomÃ© and PrÃ­ncipe'}
     ]
   });
 
@@ -495,4 +500,34 @@ $(function () {
       spotColor: $this.data('spotcolor')
     });
   });
+});
+
+(function () {
+
+    var quotes = $(".quotes-slide");
+    var quoteIndex = -1;
+
+    function showNextQuote() {
+        ++quoteIndex;
+        quotes.eq(quoteIndex % quotes.length)
+            .fadeIn(2000)
+            .delay(2000)
+            .fadeOut(2000, showNextQuote);
+    }
+
+    showNextQuote();
+
+})();
+
+$(".clinical-notes").click(function () {
+  var effect = 'slide',
+      options = { direction: 'left' },
+      duration = 500;
+
+  $('#clinicalNotesDiv').toggle(effect, options, duration);
+});
+
+$('.like-btn').click(function () {
+  $(this).children('i').toggleClass('ion-ios-heart');
+  $(this).children('i').toggleClass('ion-ios-heart-outline');
 });

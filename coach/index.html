@@ -20,6 +20,7 @@
        folder instead of downloading all of them to reduce the load. -->
   <link rel="stylesheet" href="../dist/css/skins/_all-skins.min.css">
   <link href="../dist/css/custom.css" rel="stylesheet" />
+  <link href="../dist/css/angular-csp.css" rel="stylesheet" />
 
   <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
   <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -28,8 +29,8 @@
   <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
   <![endif]-->
 </head>
-<body class="hold-transition skin-blue sidebar-mini">
-<div class="wrapper">
+<body class="hold-transition skin-blue sidebar-mini" data-ng-app="olh-lps-coach">
+<div class="wrapper" data-ng-cloak="">
 
   <header class="main-header">
 
@@ -75,11 +76,13 @@
                                 <span class="score-icon">
                                     <img src="../dist/img/score.png" alt="" />
                                 </span>
-                                <i class="fa fa-caret-down custom"></i>
-                                <span class="label label-danger">(-2.0)</span>
+                                <span class="">
+                                    5 Audits
+                                    <i class="fa fa-caret-up custom"></i> +2.0 pts.
+                                </span>
                             </a>
                             <ul class="dropdown-menu">
-                                <li class="header">You have 9 tasks</li>
+                                <li class="header">You have 5 Audits</li>
                                 <li>
                                     <!-- inner menu: contains the actual data -->
                                     <ul class="menu">
@@ -87,14 +90,9 @@
                                             <!-- Task item -->
                                             <a href="#">
                                                 <h3>
-                                                    Design some buttons
+                                                    Audit 1
                                                     <small class="pull-right">20%</small>
                                                 </h3>
-                                                <div class="progress xs">
-                                                    <div class="progress-bar progress-bar-aqua" style="width: 20%" role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100">
-                                                        <span class="sr-only">20% Complete</span>
-                                                    </div>
-                                                </div>
                                             </a>
                                         </li>
                                         <!-- end task item -->
@@ -102,14 +100,9 @@
                                             <!-- Task item -->
                                             <a href="#">
                                                 <h3>
-                                                    Create a nice theme
+                                                    Audit 2
                                                     <small class="pull-right">40%</small>
                                                 </h3>
-                                                <div class="progress xs">
-                                                    <div class="progress-bar progress-bar-green" style="width: 40%" role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100">
-                                                        <span class="sr-only">40% Complete</span>
-                                                    </div>
-                                                </div>
                                             </a>
                                         </li>
                                         <!-- end task item -->
@@ -117,14 +110,9 @@
                                             <!-- Task item -->
                                             <a href="#">
                                                 <h3>
-                                                    Some task I need to do
+                                                    Audit 3
                                                     <small class="pull-right">60%</small>
                                                 </h3>
-                                                <div class="progress xs">
-                                                    <div class="progress-bar progress-bar-red" style="width: 60%" role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100">
-                                                        <span class="sr-only">60% Complete</span>
-                                                    </div>
-                                                </div>
                                             </a>
                                         </li>
                                         <!-- end task item -->
@@ -132,21 +120,16 @@
                                             <!-- Task item -->
                                             <a href="#">
                                                 <h3>
-                                                    Make beautiful transitions
+                                                   Audit 4
                                                     <small class="pull-right">80%</small>
                                                 </h3>
-                                                <div class="progress xs">
-                                                    <div class="progress-bar progress-bar-yellow" style="width: 80%" role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100">
-                                                        <span class="sr-only">80% Complete</span>
-                                                    </div>
-                                                </div>
                                             </a>
                                         </li>
                                         <!-- end task item -->
                                     </ul>
                                 </li>
                                 <li class="footer">
-                                    <a href="#">View all tasks</a>
+                                    <a href="#">View all Audit</a>
                                 </li>
                             </ul>
                         </li>
@@ -257,123 +240,211 @@
                         </div>
                     </div>
                     <div class="col-xs-11">
-                        <p>Area for Deadline / Announcements</p>
+                        <p class="text-uppercase quotes-slide">Dollar General's Coaching Completion Deadline Is Friday, Oct 13th</p>
+                        <p class="text-uppercase quotes-slide">Today is National heart health day</p>
                     </div>
                 </div>
             </div>
         </div>
         <div class="row">
-            <div class="col-md-4">
-                <!-- DIRECT CHAT -->
-                <div class="box box-warning direct-chat direct-chat-warning">
-                    <div class="box-header">
-                        <h3 class="box-title text-center">Inbound Messages</h3>
-                        <div class="box-tools pull-right">
-                            <button type="button" class="btn btn-box-tool" data-widget="collapse">
-                                <i class="fa fa-minus"></i>
-                            </button>
-                            <button type="button" class="btn btn-box-tool" data-widget="remove">
-                                <i class="fa fa-times"></i>
-                            </button>
-                        </div>
-                    </div>
-                    <!-- /.box-header -->
-                    <div class="box-body">
-                        <div class="row">
-                            <div class="col-xs-4">
-                                <div class="circle-logo">
-                                    <span class="icon-phone custom-chain"></span>
-                                </div>
-                            </div>
-                            <div class="col-xs-8">
-                                <div class="values-block">
-                                        10
-                                </div>
-                                <div class="row">
-                                    <div class="col-sm-12">
-                                        <p>1 New</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- /.box-body -->
-                </div>
-                <!--/.direct-chat -->
-            </div>
-            <!-- /.col -->
-            <div class="col-md-4">
-                <!-- USERS LIST -->
-                <div class="box box-danger">
-                    <div class="box-header">
-                        <h3 class="box-title">Latest Members</h3>
-                        <div class="box-tools pull-right">
-                            <button type="button" class="btn btn-box-tool" data-widget="collapse">
-                                <i class="fa fa-minus"></i>
-                            </button>
-                            <button type="button" class="btn btn-box-tool" data-widget="remove">
-                                <i class="fa fa-times"></i>
-                            </button>
-                        </div>
-                    </div>
-                    <!-- /.box-header -->
-                    <div class="box-body no-padding">
-                        <div class="row">
-                            <div class="col-xs-4">
-                                <div class="circle-logo">
-                                    <span class="icon-alarm custom-alarm"></span>
-                                </div>
-                            </div>
-                            <div class="col-xs-8">
-                                <div class="values-block">12</div>
-                                <div class="row">
-                                    <div class="col-sm-12">
-                                        <p>2 New Appointments</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- /.box-body -->
-                </div>
-                <!--/.box -->
-            </div>
-            <!-- /.col -->
+            <div class="col-sm-12">
 
-            <div class="col-md-4">
-                <div class="box box-default">
-                    <div class="box-header">
-                        <h3 class="box-title">Browser Usage</h3>
-                        <div class="box-tools pull-right">
-                            <button type="button" class="btn btn-box-tool" data-widget="collapse">
-                                <i class="fa fa-minus"></i>
-                            </button>
-                            <button type="button" class="btn btn-box-tool" data-widget="remove"><i class="fa fa-times"></i></button>
-                        </div>
-                    </div>
-                    <!-- /.box-header -->
-                    <div class="box-body no-padding">
-                        <div class="row">
-                            <div class="col-xs-4">
-                                <div class="circle-logo">
-                                    <span class="icon-setting custom-crosshair"></span>
-                                </div>
-                            </div>
-                            <div class="col-xs-8">
-                                <div class="values-block">13</div>
-                                <div class="row">
-                                    <div class="col-sm-12">
-                                        <p>2 New Tasks</p>
+                <div class="navbar-custom-menu">
+                    <ul class="nav navbar-nav row">
+                        <!-- Messages-->
+                        <li class="dropdown messages-menu col-sm-4" data-ng-controller="MessageController">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown"> 
+                                <!-- DIRECT CHAT -->
+                                <div class="box box-warning direct-chat direct-chat-warning">
+                                    <div class="box-header">
+                                        <h3 class="box-title text-center">Inbound Messages</h3>
                                     </div>
+                                    <!-- /.box-header -->
+                                    <div class="box-body">
+                                        <div class="row">
+                                            <div class="col-xs-4">
+                                                <div class="circle-logo">
+                                                    <span class="icon-phone custom-chain"></span>
+                                                </div>
+                                            </div>
+                                            <div class="col-xs-8">
+                                                <div class="values-block">
+                                                    10
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-sm-12">
+                                                        <p>3 Calls, 7 Messages</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- /.box-body -->
                                 </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- /.box-body -->
+                                <!--/.direct-chat -->
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li class="header">You have 3 calls and 7 messages</li>
+                                <li>
+                                    <!-- inner messages -->
+                                    <ul class="menu">
+                                        <li data-ng-repeat="message in messages">
+                                            <a href="javascript:void(0);">
+                                                <h4>
+                                                    {{message.memberName}} <i data-ng-if="message.isCall" class="fa fa-play-circle"></i>
+                                                    <small><i class="fa fa-clock-o"></i> {{message.duration}} {{message.durationType}}</small>
+                                                </h4>
+                                                <p class="white-space-normal">{{message.description}}</p>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                        <!-- Notifications -->
+                        <li class="dropdown messages-menu col-sm-4">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+                                <div class="box box-danger">
+                                    <div class="box-header">
+                                        <h3 class="box-title">Appointments</h3>
+                                    </div>
+                                    <!-- /.box-header -->
+                                    <div class="box-body no-padding">
+                                        <div class="row">
+                                            <div class="col-xs-4">
+                                                <div class="circle-logo">
+                                                    <span class="icon-alarm custom-alarm"></span>
+                                                </div>
+                                            </div>
+                                            <div class="col-xs-8">
+                                                <div class="values-block">6</div>
+                                                <div class="row">
+                                                    <div class="col-sm-12">
+                                                        <p>2 New Members</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- /.box-body -->
+                                </div>
+                                <!--/.box -->
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li class="header">You have 6 appointments</li>
+                                <li>
+                                    <!-- inner menu -->
+                                        <ul class="menu">
+                                            <li>
+                                                <a href="#">
+                                                    <h4>
+                                                        Louis
+                                                        <small><i class="fa fa-clock-o"></i> Oct 20, 3 pm </small>
+                                                    </h4>
+                                                    <p>(267) 862-9806  <i class="fa fa-phone blue-color"></i></p>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#">
+                                                    <h4>
+                                                        Harrell, Marcelino
+                                                        <small><i class="fa fa-clock-o"></i> Oct 20, 3 pm </small>
+                                                    </h4>
+                                                    <p>(329) 999-6428  <i class="fa fa-phone blue-color"></i></p>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#">
+                                                    <h4>
+                                                        Talley, Jacob
+                                                        <small><i class="fa fa-clock-o"></i> Oct 21, 3 pm </small>
+                                                    </h4>
+                                                    <p>(557) 768-1059  <i class="fa fa-phone blue-color"></i></p>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#">
+                                                    <h4>
+                                                        Astair, Fred
+                                                        <small><i class="fa fa-clock-o"></i> Oct 21, 3 pm </small>
+                                                    </h4>
+                                                    <p>(897) 181-5152  <i class="fa fa-phone blue-color"></i></p>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#">
+                                                    <h4>
+                                                        Mattingley, Scott
+                                                        <small><i class="fa fa-clock-o"></i> Oct 25, 3 pm </small>
+                                                    </h4>
+                                                    <p>(265) 238-7651  <i class="fa fa-phone blue-color"></i></p>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#">
+                                                    <h4>
+                                                        Aagard, Darin
+                                                        <small><i class="fa fa-clock-o"></i> Oct 25, 3 pm </small>
+                                                    </h4>
+                                                    <p>(954) 169-5936  <i class="fa fa-phone blue-color"></i></p>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                </li>
+                            </ul>
+                        </li>
+                        <!-- Tasks-->
+                        <li class="dropdown tasks-menu  col-sm-4" data-ng-controller="TaskController">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                                <div class="box box-default">
+                                    <div class="box-header">
+                                        <h3 class="box-title">Tasks</h3>
+                                    </div>
+                                    <!-- /.box-header -->
+                                    <div class="box-body no-padding">
+                                        <div class="row">
+                                            <div class="col-xs-4">
+                                                <div class="circle-logo">
+                                                    <span class="icon-setting custom-crosshair"></span>
+                                                </div>
+                                            </div>
+                                            <div class="col-xs-8">
+                                                <div class="values-block">32</div>
+                                                <div class="row">
+                                                    <div class="col-sm-12">
+                                                        <p>20 Calls, 10 Messages, 2 Other</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- /.box-body -->
+                                </div>
+                                <!-- /.box -->
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li class="header">You have 32 tasks</li>
+                                <li>
+                                    <!-- inner menu-->
+                                    <ul class="menu">
+                                        <li data-ng-repeat="task in pendingTasks">
+                                            <a href="javascript:void(0);">
+                                                <p class="white-space-normal">
+                                                    {{task.description}} <i data-ng-if="task.isCall" class="fa fa-phone blue-color"></i>
+                                                </p>
+                                                <h4>
+                                                    <small>{{task.member.id}} - <span class="text-capitalize">{{task.member.lastName}}{{task.member.lastName ? ', ' : ''}}{{task.member.firstName}}</span></small>
+                                                </h4>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
                 </div>
-                <!-- /.box -->
+
             </div>
-            <!-- /.col -->
 
             <div class="col-sm-12">
                 <div class="row">
@@ -382,14 +453,14 @@
                         <img src="../dist/img/member_engagement.png" alt="" class="graph-image" />
                     </div>
                     <div class="col-sm-6">
-                        <h2 class="page-header">Members Health Index</h2>
-                        <img src="../dist/img/members_health_index.png" alt="" class="graph-image" />
+                        <h2 class="page-header">My Member Status</h2>
+                        <img src="../dist/img/my_member_status.png" alt="" class="graph-image" />
                     </div>
                 </div>
                 <div class="row">
                     <div class="col-sm-6">
                         <h2 class="page-header">Wellness Social Trends</h2>
-                        <div class="nav-tabs-custom">
+                        <div class="nav-tabs-custom b-r-7">
                             <ul class="nav nav-tabs">
                                 <li class="active"><a href="#activity" data-toggle="tab">Articles</a></li>
                                 <li><a href="#timeline" data-toggle="tab">POD Casts</a></li>
@@ -410,10 +481,11 @@
                                             <div class="item">
                                                 <img src="../dist/img/user4-128x128.jpg" alt="user image" class="">
                                                 <p class="message">
-                                                    <a href="#" class="name">
+                                                    <a href="javascript:void(0)" class="name like-btn">
                                                         Article 1
+                                                        <i class="ion ion-ios-heart-outline pull-right"></i>
                                                     </a>
-                                                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum sample text. 
+                                                    Lorem Ipsum is simply dummy text.
                                                 </p>
                                             </div>
                                             <!-- /.item -->
@@ -421,10 +493,11 @@
                                             <div class="item">
                                                 <img src="../dist/img/user3-128x128.jpg" alt="user image" class="">
                                                 <p class="message">
-                                                    <a href="#" class="name">
+                                                    <a href="javascript:void(0)" class="name like-btn">
                                                         Article 2
+                                                        <i class="ion ion-ios-heart-outline pull-right"></i>
                                                     </a>
-                                                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum sample text.
+                                                    Lorem Ipsum is simply dummy text.
                                                 </p>
                                             </div>
                                             <!-- /.item -->
@@ -432,10 +505,11 @@
                                             <div class="item">
                                                 <img src="../dist/img/user2-160x160.jpg" alt="user image" class="">
                                                 <p class="message">
-                                                    <a href="#" class="name">
+                                                    <a href="javascript:void(0)" class="name like-btn">
                                                         Article 3
+                                                        <i class="ion ion-ios-heart-outline pull-right"></i>
                                                     </a>
-                                                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum sample text.
+                                                    Lorem Ipsum is simply dummy text.
                                                 </p>
                                             </div>
                                             <!-- /.item -->
@@ -443,10 +517,10 @@
                                             <div class="item">
                                                 <img src="../dist/img/user2-160x160.jpg" alt="user image" class="">
                                                 <p class="message">
-                                                    <a href="#" class="name">
+                                                    <a href="javascript:void(0)" class="name like-btn">
                                                         Article 4
+                                                        <i class="ion ion-ios-heart-outline pull-right"></i>
                                                     </a>
-                                                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum sample text.
                                                     Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum sample text.
                                                 </p>
                                             </div>
@@ -455,10 +529,10 @@
                                             <div class="item">
                                                 <img src="../dist/img/user2-160x160.jpg" alt="user image" class="">
                                                 <p class="message">
-                                                    <a href="#" class="name">
+                                                    <a href="javascript:void(0)" class="name like-btn">
                                                         Article 5
+                                                        <i class="ion ion-ios-heart-outline pull-right"></i>
                                                     </a>
-                                                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum sample text.
                                                     Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum sample text.
                                                 </p>
                                             </div>
@@ -481,10 +555,11 @@
                                         <div class="item">
                                             <img src="../dist/img/user4-128x128.jpg" alt="user image" class="">
                                             <p class="message">
-                                                <a href="#" class="name">
+                                                <a href="javascript:void(0);" class="name like-btn">
                                                     Pod Casts 1
+                                                    <i class="ion ion-ios-heart-outline pull-right"></i>
                                                 </a>
-                                                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum sample text.
+                                                Lorem Ipsum is simply dummy text.
                                             </p>
                                         </div>
                                         <!-- /.item -->
@@ -492,10 +567,11 @@
                                         <div class="item">
                                             <img src="../dist/img/user3-128x128.jpg" alt="user image" class="">
                                             <p class="message">
-                                                <a href="#" class="name">
+                                                <a href="javascript:void(0);" class="name like-btn">
                                                     Pod Casts 2
+                                                    <i class="ion ion-ios-heart-outline pull-right"></i>
                                                 </a>
-                                                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum sample text.
+                                                Lorem Ipsum is simply dummy text.
                                             </p>
                                         </div>
                                         <!-- /.item -->
@@ -503,10 +579,11 @@
                                         <div class="item">
                                             <img src="../dist/img/user2-160x160.jpg" alt="user image" class="">
                                             <p class="message">
-                                                <a href="#" class="name">
+                                                <a href="javascript:void(0);" class="name like-btn">
                                                     Pod Casts 3
+                                                    <i class="ion ion-ios-heart-outline pull-right"></i>
                                                 </a>
-                                                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum sample text.
+                                                Lorem Ipsum is simply dummy text.
                                             </p>
                                         </div>
                                         <!-- /.item -->
@@ -514,10 +591,10 @@
                                         <div class="item">
                                             <img src="../dist/img/user2-160x160.jpg" alt="user image" class="">
                                             <p class="message">
-                                                <a href="#" class="name">
+                                                <a href="javascript:void(0);" class="name like-btn">
                                                     Pod Casts 4
+                                                    <i class="ion ion-ios-heart-outline pull-right"></i>
                                                 </a>
-                                                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum sample text.
                                                 Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum sample text.
                                             </p>
                                         </div>
@@ -526,10 +603,10 @@
                                         <div class="item">
                                             <img src="../dist/img/user2-160x160.jpg" alt="user image" class="">
                                             <p class="message">
-                                                <a href="#" class="name">
+                                                <a href="javascript:void(0);" class="name like-btn">
                                                     Pod Casts 5
+                                                    <i class="ion ion-ios-heart-outline pull-right"></i>
                                                 </a>
-                                                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum sample text.
                                                 Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum sample text.
                                             </p>
                                         </div>
@@ -550,104 +627,7 @@
                     </div>
                     <div class="col-sm-6">
                         <h2 class="page-header">Performance Guarantees</h2>
-                        <div class="nav-tabs-custom">
-                            <ul class="nav nav-tabs">
-                                <li class="active"><a href="#callSummary" data-toggle="tab">Call Summary</a></li>
-                                <li><a href="#timeSlot" data-toggle="tab">Time Slot</a></li>
-                            </ul>
-                            <div class="tab-content">
-                                <div class="active tab-pane" id="callSummary">
-                                   
-                                    <div class="row">
-                                        <div class="col-sm-5">
-                                            <div class="score-number">
-                                                90
-                                            </div>
-                                            <div class="score-label">
-                                                Total Calls Made
-                                            </div>
-                                        </div>
-                                        <div class="col-sm-7 call-summary">
-                                            <div class="form-group">
-                                                <label class="control-label col-sm-8">Missed Calls</label>
-                                                <label class="control-label control-value">12</label>
-                                            </div>
-                                            <div class="form-group">
-                                                <label class="control-label col-sm-8">Unanswered</label>
-                                                <label class="control-label control-value">6</label>
-                                            </div>
-                                            <div class="form-group">
-                                                <label class="control-label col-sm-8">Call Drops</label>
-                                                <label class="control-label control-value">3</label>
-                                            </div>
-                                            <div class="form-group">
-                                                <label class="control-label col-sm-8">Avg Speed</label>
-                                                <label class="control-label control-value-insec">5 Sec</label>
-                                            </div>
-                                            <div class="form-group time-slot">
-                                                <label class="control-label col-sm-8">Average Call Time</label>
-                                                <label class="control-label control-time">12 Min</label>
-                                            </div>
-                                            <div class="form-group">
-                                                <label class="control-label col-sm-8">Longest Call Time</label>
-                                                <label class="control-label control-time">23 Min</label>
-                                            </div>
-                                            <div class="form-group">
-                                                <label class="control-label col-sm-8">Shortest Call Time</label>
-                                                <label class="control-label control-time">7 Min</label>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                </div>
-                                <!-- /.tab-pane -->
-                                <div class="tab-pane" id="timeSlot">
-                                    <div class="row">
-                                        <div class="col-sm-5">
-                                            <div class="score-number">
-                                                90
-                                            </div>
-                                            <div class="score-label">
-                                                Time Slots Available
-                                            </div>
-                                        </div>
-                                        <div class="col-sm-7 call-summary">
-                                            <div class="form-group">
-                                                <label class="control-label col-sm-8">Missed Calls</label>
-                                                <label class="control-label control-value">12</label>
-                                            </div>
-                                            <div class="form-group">
-                                                <label class="control-label col-sm-8">Unanswered</label>
-                                                <label class="control-label control-value">6</label>
-                                            </div>
-                                            <div class="form-group">
-                                                <label class="control-label col-sm-8">Call Drops</label>
-                                                <label class="control-label control-value">3</label>
-                                            </div>
-                                            <div class="form-group">
-                                                <label class="control-label col-sm-8">Avg Speed</label>
-                                                <label class="control-label control-value-insec">5 Sec</label>
-                                            </div>
-                                            <div class="form-group time-slot">
-                                                <label class="control-label col-sm-8">Average Call Time</label>
-                                                <label class="control-label control-time">12 Min</label>
-                                            </div>
-                                            <div class="form-group">
-                                                <label class="control-label col-sm-8">Longest Call Time</label>
-                                                <label class="control-label control-time">23 Min</label>
-                                            </div>
-                                            <div class="form-group">
-                                                <label class="control-label col-sm-8">Shortest Call Time</label>
-                                                <label class="control-label control-time">7 Min</label>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <!-- /.tab-pane -->
-
-                            </div>
-                            <!-- /.tab-content -->
-                        </div>
+                        <img src="../dist/img/performance_guarantees.png" alt="" class="graph-image" />
                     </div>
                 </div>
             </div>
@@ -872,6 +852,7 @@
     <script src="../bootstrap/js/bootstrap.min.js"></script>
     <!-- Morris.js charts -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/raphael/2.1.0/raphael-min.js"></script>
+    <script src="../plugins/angular/angular.min.js"></script>
     <script src="../plugins/morris/morris.min.js"></script>
     <!-- Sparkline -->
     <script src="../plugins/sparkline/jquery.sparkline.min.js"></script>
@@ -895,6 +876,11 @@
     <script src="../dist/js/app.min.js"></script>
     <!-- Onlife dashboard demo (This is only for demo purposes) -->
     <script src="../dist/js/pages/dashboard.js"></script>
+    <script src="../dist/js/angular/coach/app.js"></script>
+    <script src="../dist/js/angular/coach/services/taskService.js"></script>
+    <script src="../dist/js/angular/coach/services/messageService.js"></script>
+    <script src="../dist/js/angular/coach/controllers/taskController.js"></script>
+    <script src="../dist/js/angular/coach/controllers/messageController.js"></script>
     <!-- Onlife for demo purposes -->
     <script src="../dist/js/demo.js"></script>
 </body>

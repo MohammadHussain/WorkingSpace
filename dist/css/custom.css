@@ -28,13 +28,16 @@
 .icon-contexual_1:before{content:'\0044';}
 .icon-dashboard:before{content:'\0045';}
 .icon-location:before{content:'\0046';}
-.icon-women:before{content:'\0047';}
+.icon-member:before{content:'\0047';}
 .icon-members:before{content:'\0048';}
-.icon-mic:before{content:'\0049';}
-.icon-phone:before{content:'\004a';}
-.icon-reports:before{content:'\004b';}
-.icon-setting:before{content:'\004c';}
-.icon-wellness:before{content:'\004d';}
+.icon-messages:before{content:'\0049';}
+.icon-mic:before{content:'\004a';}
+.icon-people:before{content:'\004b';}
+.icon-phone:before{content:'\004c';}
+.icon-reports:before{content:'\004d';}
+.icon-setting:before{content:'\004e';}
+.icon-wellness:before{content:'\004f';}
+.icon-women:before{content:'\0050';}
 
 /* Checkboxes */
 .checkbox {
@@ -381,7 +384,7 @@ body .btn-default {
 }
 .score-icon {
     display: inline-block;
-    margin: 0 15px;
+    margin-left: 15px;
 }
 .skin-blue .sidebar-menu>li:hover>a, .skin-blue .sidebar-menu>li.active>a {
     background: #27465c;
@@ -403,6 +406,7 @@ body .btn-default {
     background-color: #FFF !important;
     color: #666666 !important;
     border:0;
+    height: 60px;
     padding: 0;
 }
 .microphone {
@@ -545,6 +549,9 @@ box.box-danger .circle-logo {
 }
 .chat .item>.message>.name {
     color: #595959;
+}
+.chat .item > .message {
+    padding-right: 10px;
 }
 .nav-tabs-custom>.nav-tabs>li:first-of-type {
     margin-left: 20px;
@@ -720,11 +727,12 @@ box.box-danger .circle-logo {
     margin-top: 25px;
 }
 .height-value {
-    font-size: 3em;
+    font-size: 1.3em;
     color: #4d4d4e;
-    line-height: 180px;
+    line-height: 17px;
     white-space: nowrap;
     margin-left: -14px;
+    padding-top: 70px;
 }
 .height-value .value-in{
     font-size: 24px;
@@ -732,7 +740,7 @@ box.box-danger .circle-logo {
 .radius-50{
     border-radius: 50%;
 }
-.goal-progress .chat .item img, .recommendations .chat .item img { 
+.goal-progress .chat .item img, .recommendations .chat .item img {
     width: 50px;
     height: 50px;
     border: 2px solid transparent;
@@ -741,6 +749,9 @@ box.box-danger .circle-logo {
 .goal-progress  .chat .item .message .name, .recommendations  .chat .item .message .name {
     display: block;
     font-weight: 600;
+}
+.name i:hover {
+    color: #74b059;
 }
 .chat .item .message .name {
     color: #595959;
@@ -855,8 +866,8 @@ box.box-danger .circle-logo {
         outline: 0;
     }
 
-    .radio-warning input[type="radio"]:checked + label::after, 
-    .radio-danger input[type="radio"]:checked + label::after, 
+    .radio-warning input[type="radio"]:checked + label::after,
+    .radio-danger input[type="radio"]:checked + label::after,
     .radio-success input[type="radio"]:checked + label::after {
         background-color: inherit;
     }
@@ -904,6 +915,12 @@ box.box-danger .circle-logo {
         -moz-box-shadow: 2px 2px 5px 0px rgba(0,0,0,0.14);
         box-shadow: 2px 2px 5px 0px rgba(0,0,0,0.14);
         border:0;
+    }
+    .right .direct-chat-text {
+        background: #c1f9cb;
+    }
+    .right .direct-chat-text:before, .right .direct-chat-text:after {
+        border-bottom-color: #c1f9cb;
     }
     .direct-chat-name {
         color: #467485;
@@ -975,7 +992,7 @@ box.box-danger .circle-logo {
 }
 .onboard-screen .nav-tabs-custom>.nav-tabs>li>a {
     font-size: 1.3em;
-    margin: 0 3em;
+    margin: 0 2.8em;
     padding: 21px;
     color: #999999;
 }
@@ -1040,3 +1057,312 @@ box.box-danger .circle-logo {
 .onboard-screen .checkbox-inline+.checkbox-inline  {
     margin-left: 15px;
 }
+.onboard-screen .content-area {
+    padding: 3em 4em;
+    margin-top: -15px;
+    background: #FFF;
+}
+.text-blue {
+    color: #25aae1;
+}
+.text-gray-light{
+    color: #676766;
+}
+.right-section h1 {
+    margin: 5px 0;
+}
+.welcome-msg {
+    position: absolute;
+    width: 30px;
+    height:auto;
+    right:0;
+    top: 38px;
+    cursor: pointer;
+}
+.clinical-notes {
+    position: absolute;
+    width: 30px;
+    height:auto;
+    top: 26%;
+    cursor: pointer;
+}
+
+.content .navbar-nav {
+    float: none;
+}
+.content .nav>li>a:hover, .content .nav>li>a:active, .content .nav>li>a:focus {
+    background: inherit;
+}
+.content .nav.navbar-nav.row {
+    margin-left: -15px;
+    margin-right: -15px;
+}
+.content .navbar-nav>li>a {
+    padding: 0;
+}
+.content .box {
+    margin-bottom: 0;
+}
+.content .navbar-custom-menu>.navbar-nav>li>.dropdown-menu {
+    margin-right: 15px;
+}
+.navbar-nav>.messages-menu>.dropdown-menu>li .menu>li>a>p, .navbar-nav>.messages-menu>.dropdown-menu>li .menu>li>a>h4 {
+    margin-left: 0;
+}
+.navbar-nav>.tasks-menu>.dropdown-menu>li .menu>li>a>h3 {
+    margin-bottom: 0;
+}
+.quotes-slide {
+    display: none;
+}
+.activity-list {
+    margin-bottom:3px;
+    padding: 5px;
+    cursor: pointer;
+}
+.activity-list h5{
+    margin: 0;
+    font-weight: bold;
+}
+.activity-list:hover {
+    background: #f1f1f1;
+}
+
+.campaign-dashboard .navbar-nav>li>a {
+    padding-top: 6px;
+    padding-bottom: 6px;
+}
+.campaign-dashboard  .content-header h1 {
+    margin: 0;
+    font-size: 2.2em;
+    font-weight: 600;
+    color: #FFF;
+}
+.campaign-dashboard  .content-header h3 {
+    margin: 0;
+    font-size: 1.6em;
+    color: #FFF;
+}
+
+.campaign-dashboard .small-box.bg_blue {
+    background: #FFF !important;
+    color: #29abe2 !important;
+}
+.campaign-dashboard  .bg_blue .small-box-footer {
+    background: #8ccaec;
+}
+.bg_blue.small-box .icon {
+    color: #29abe2
+}
+.campaign-dashboard  .bg_pink .small-box-footer {
+    background: #d89ca8;
+}
+.bg_pink.small-box .icon {
+    color: #a64e62;
+}
+.campaign-dashboard .small-box.bg_pink {
+    background: #FFF !important;
+    color: #a64e62 !important;
+}
+.campaign-dashboard  .bg_green .small-box-footer {
+    background: #bad7ab;
+}
+.bg_green.small-box .icon {
+    color: #74b059;
+}
+.campaign-dashboard .small-box.bg_green {
+    background: #FFF !important;
+    color: #74b059 !important;
+}
+.campaign-section .page-header {
+    margin: 0;
+}
+.campaign-dashboard.sidebar-mini.sidebar-collapse .content-wrapper {
+    margin-left: 90px !important;
+}
+.campaign-dashboard.sidebar-mini.sidebar-collapse .main-sidebar {
+    width: 90px !important;
+}
+.campaign-dashboard.sidebar-mini.sidebar-collapse .main-header .navbar {
+    margin-left: 0;
+}
+.campaign-dashboard.sidebar-mini.sidebar-collapse .content-header {
+    padding: 10px 10px 5px 10px;
+}
+.campaign-dashboard.sidebar-mini.sidebar-collapse .content-wrapper, 
+.campaign-dashboard.sidebar-mini.sidebar-collapse .right-side, 
+.campaign-dashboard.sidebar-mini.sidebar-collapse .main-footer {
+    margin-left: 90px !important;
+}
+.campaign-section {
+    margin: 20px 0;
+}
+.campaign-dashboard.sidebar-mini.sidebar-collapse .sidebar-menu>li>a {
+    height: 130px;
+    line-height: 105px;
+    font-size: 2em;
+    text-align: center;
+}
+.campaign-dashboard .sidebar-mini.sidebar-collapse .sidebar-menu>li.active:before {
+    width: 0px;
+    height: 0px;
+    border-top: 60px solid transparent;
+    border-bottom: 60px solid transparent;
+    border-left: 60px solid green;
+}
+.skin-blue .sidebar-menu>li.active span.arrow-right {
+    background: url(/dist/img/right_arrow.png) no-repeat;
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    display: block;
+    right: -29px;
+    top: 50%;
+    margin-top: -15px;
+}
+.right-section .box-header {
+    text-align: left;
+    color: #FFF;
+    background: #5cb1d1;
+}
+.right-section .box{
+    margin-bottom: 15px;
+}
+.right-section .checkbox {
+    margin: 15px 0 15px 15px;
+}
+.right-section .checkbox label {
+    line-height: 16px;
+}
+.right-section .box.box-default .box-title {
+    color: #FFF;
+}
+.right-section .box.box-default {
+    border-bottom: 0;
+}
+.campaign-dashboard  .sidebar-menu {
+    overflow: visible;
+}
+.campaign-dashboard [class*='icon-'] {
+    margin-right: 10px;
+}
+.campaign-dashboard .sidebar-menu>li:hover>a>span:not(.pull-right), 
+.campaign-dashboard .sidebar-mini.sidebar-collapse .sidebar-menu>li:hover>.treeview-menu {
+    width: 140px !important;
+    left: 90px !important;
+    font-size: 18px;
+    height: 68px;
+    margin-top: 0;
+    top: 30px;
+    line-height: 64px;
+    padding: 0;
+}
+.segment-item {
+    padding: 15px;
+    border-top: 1px solid #CCC;
+}
+.segment-item h3 {
+    font-weight: 600;
+}
+.editable-icons i {
+    font-size: 1.6em;
+    cursor: pointer;
+    margin-top: 8px;
+}
+.display-none {
+    display: none;
+}
+.relative {
+    position: relative;
+}
+.clinical-notes-container {
+    width: 760px;
+    height: 700px;
+    background: whitesmoke;
+    padding: 50px;
+    position: absolute;
+    top: 10%;
+    border-radius: 5px;
+    border: 2px solid lightgrey;
+}
+.clinical-note {
+  width: 580px;
+  height: 200px;
+}
+.border-left-right {
+    border-right: 1px solid #CCC;
+    border-left: 1px solid #CCC;
+}
+.conditional-attributes {
+    padding: 15px 0;
+    border-top: 1px solid #CCC;
+}
+.border-right {
+    border-right: 1px solid #CCC;
+}
+.apply-segment {
+    margin: 0;
+    padding: 0;
+}
+.apply-segment li {
+    list-style-type: none;
+    background: url(/dist/img/bullet.jpg) no-repeat 6px 22px;
+    padding-left: 25px;
+    border-top: 1px solid #CCC;
+}
+.apply-segment .item-field {
+    display: inline-block;
+    width: 100%;
+    padding: 5px 0;
+}
+.apply-segment li:last-child .item-field {
+    border-bottom: 1px solid #CCC;
+}
+.button-wrapper {
+    margin: 20px 0;
+}
+.campaign-dashboard .form-control {
+    background: #f3f1f1;
+    border: 2px solid #CCC;
+    border-radius: 4px;
+}
+.campaign-dashboard .page-header{
+    font-weight: 600;
+    font-size: 26px;
+}
+.m-l-10 {
+  margin-left: 10px;
+}
+.p-y-15 {
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+.b-r-0 {
+    border-radius: 0;
+}
+.b-r-7 {
+    border-radius: 7px;
+}
+/*  Saravanan changes 10/14/2016  */
+.navbar-custom-menu>.navbar-nav>li>.dropdown-menu {
+    right: auto !important;
+}
+.list-style {
+    list-style-type: disc !important;
+}
+.list-style li{
+    margin-left: 27px;
+    padding:5px;
+}
+.small-box h3{
+    font-weight: normal;
+}
+.campaign-dashboard .page-header{
+    font-weight: 600;
+    font-size: 26px;
+    font-size: 22px;
+}
+.white-space-normal {
+  white-space: normal;
+}
+
