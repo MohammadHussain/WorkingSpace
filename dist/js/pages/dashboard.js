@@ -128,14 +128,19 @@ $(function () {
       alwaysVisible: true,
       railVisible: true
   });
-  $('#chat-box3, #pod-casts3').slimScroll({
+  $('#chat-box4, #pod-casts3').slimScroll({
       height: '230px',
+      alwaysVisible: true,
+      railVisible: true
+  });
+  $('#chat-box3').slimScroll({
+      height: '170px',
       alwaysVisible: true,
       railVisible: true
   });
 
   $('.direct-chat-messages').slimScroll({
-      height: '500px',
+      height: '400px',
       alwaysVisible: true,
       railVisible: false
   });
