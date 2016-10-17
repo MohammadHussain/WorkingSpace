@@ -130,3 +130,25 @@ h4{
     border-radius: 50%;
     height: 45px;
 }
+.free-width{
+    width: 100%;
+}
+.margin-right-reset{
+    margin-right: 0;
+}
+.course-list{
+    min-height: 250px;
+    border: 1px solid #ccc;
+}
+.course-list li{
+    padding: 15px 0px 15px 0px;
+
+}
+.custom-arrow-icon{
+    font-size: 22px;
+    position: absolute;
+    right: 15px;
+}
+.summary-image{
+    min-height: 400px;
+}
